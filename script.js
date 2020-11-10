@@ -18,9 +18,9 @@ do {
         arr.push(y[1])
     }
     if (y[0] == "del") {
-        arr.forEach(function (value) {
+        arr.forEach(function (value, key) {
             if (value == y[1]) {
-                arr.splice(value,1)
+                arr.splice(key,1)
             }  
         });
     }
